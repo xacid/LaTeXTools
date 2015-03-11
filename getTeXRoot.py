@@ -49,7 +49,9 @@ def get_tex_root(view):
 		lines = codecs.open(texFile, "r", "UTF-8")
 		is_file = True
 
-	for line in lines:
+	for line in lines
+		if line.isspace():
+			continue
 		if not line.startswith('%'):
 			break
 		else:
